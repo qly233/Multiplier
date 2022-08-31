@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Apr 26 20:19:57 2022
+# Process ID: 28336
+# Log file: D:/zuchengyuanli/chengfaqi/planAhead_run_1/planAhead.log
+# Journal file: D:/zuchengyuanli/chengfaqi/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/zuchengyuanli/chengfaqi/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {A[5]} {A[4]} {A[3]} {A[2]} {A[1]} {A[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {B[5]} {B[4]} {B[3]} {B[2]} {B[1]} {B[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {led[11]} {led[10]} {led[9]} {led[8]} {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+startgroup
+set_property package_pin T3 [get_ports {A[5]}]
+endgroup
+startgroup
+set_property package_pin U3 [get_ports {A[4]}]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports {A[3]}]
+endgroup
+startgroup
+set_property package_pin V3 [get_ports {A[2]}]
+endgroup
+startgroup
+set_property package_pin V4 [get_ports {A[1]}]
+endgroup
+startgroup
+set_property package_pin W4 [get_ports {A[0]}]
+endgroup
+startgroup
+set_property package_pin Y4 [get_ports {B[5]}]
+endgroup
+startgroup
+set_property package_pin Y6 [get_ports {B[4]}]
+endgroup
+startgroup
+set_property package_pin W7 [get_ports {B[3]}]
+endgroup
+startgroup
+set_property package_pin Y8 [get_ports {B[2]}]
+endgroup
+startgroup
+set_property package_pin Y7 [get_ports {B[1]}]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports {B[0]}]
+endgroup
+startgroup
+set_property package_pin R1 [get_ports {led[11]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {led[10]}]
+endgroup
+startgroup
+set_property package_pin P1 [get_ports {led[9]}]
+endgroup
+startgroup
+set_property package_pin N2 [get_ports {led[8]}]
+endgroup
+startgroup
+set_property package_pin M1 [get_ports {led[7]}]
+endgroup
+startgroup
+set_property package_pin M2 [get_ports {led[6]}]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports {led[5]}]
+endgroup
+startgroup
+set_property package_pin J2 [get_ports {led[4]}]
+endgroup
+startgroup
+set_property package_pin G1 [get_ports {led[3]}]
+endgroup
+startgroup
+set_property package_pin E1 [get_ports {led[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {led[1]}]]
+set_property package_pin "" [get_ports [list  {led[0]}]]
+set_property package_pin "" [get_ports [list  {led[1]}]]
+set_property package_pin "" [get_ports [list  {led[0]}]]
+startgroup
+set_property package_pin D2 [get_ports {led[1]}]
+endgroup
+startgroup
+set_property package_pin A1 [get_ports {led[0]}]
+endgroup
+set_property pulltype PULLDOWN [get_ports [list clk]]
+set_property pulltype PULLDOWN [get_ports [list reset]]
+set_property pulltype PULLDOWN [get_ports [list sw]]
+set_property pulltype PULLDOWN [get_ports [list {A[5]} {A[4]} {A[3]} {A[2]} {A[1]} {A[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {B[5]} {B[4]} {B[3]} {B[2]} {B[1]} {B[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list clk]]
+set_property iostandard LVCMOS18 [get_ports [list reset]]
+set_property iostandard LVCMOS18 [get_ports [list sw]]
+set_property package_pin "" [get_ports [list  clk]]
+set_property package_pin "" [get_ports [list  clk]]
+save_constraints

@@ -1,0 +1,191 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ise\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2L -n
+3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf top.ucf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc7a100t,fgg484,C,-2L (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock reset
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+A<5>        |   -0.225(F)|      FAST  |    1.587(F)|      SLOW  |sw_reset_OR_3_o   |   0.000|
+B<5>        |    0.601(F)|      SLOW  |    0.700(F)|      SLOW  |sw_reset_OR_3_o   |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sw
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+A<5>        |   -0.196(F)|      FAST  |    1.754(F)|      SLOW  |sw_reset_OR_3_o   |   0.000|
+B<5>        |    0.502(F)|      SLOW  |    0.867(F)|      SLOW  |sw_reset_OR_3_o   |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock reset to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+led<11>     |         6.656(F)|      SLOW  |         3.040(F)|      FAST  |sw_reset_OR_3_o   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock sw to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+led<11>     |         6.823(F)|      SLOW  |         3.011(F)|      FAST  |sw_reset_OR_3_o   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock reset
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sw             |         |         |    0.891|    0.891|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sw
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sw             |         |         |    0.792|    0.792|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |led<0>         |    7.867|
+A<0>           |led<1>         |    7.415|
+A<0>           |led<2>         |    7.624|
+A<0>           |led<3>         |    8.221|
+A<0>           |led<4>         |    8.344|
+A<0>           |led<5>         |    8.495|
+A<0>           |led<6>         |    8.927|
+A<0>           |led<7>         |    9.391|
+A<0>           |led<8>         |    9.378|
+A<0>           |led<9>         |   10.077|
+A<1>           |led<1>         |    7.782|
+A<1>           |led<2>         |    7.903|
+A<1>           |led<3>         |    8.244|
+A<1>           |led<4>         |    8.367|
+A<1>           |led<5>         |    8.598|
+A<1>           |led<6>         |    8.950|
+A<1>           |led<7>         |    9.414|
+A<1>           |led<8>         |    9.401|
+A<1>           |led<9>         |   10.100|
+A<2>           |led<2>         |    7.249|
+A<2>           |led<3>         |    8.089|
+A<2>           |led<4>         |    8.212|
+A<2>           |led<5>         |    8.762|
+A<2>           |led<6>         |    9.045|
+A<2>           |led<7>         |    9.509|
+A<2>           |led<8>         |    9.496|
+A<2>           |led<9>         |   10.195|
+A<3>           |led<3>         |    8.656|
+A<3>           |led<4>         |    8.914|
+A<3>           |led<5>         |    9.062|
+A<3>           |led<6>         |    9.494|
+A<3>           |led<7>         |    9.958|
+A<3>           |led<8>         |    9.945|
+A<3>           |led<9>         |   10.644|
+A<4>           |led<4>         |    6.937|
+A<4>           |led<5>         |    7.815|
+A<4>           |led<6>         |    8.098|
+A<4>           |led<7>         |    8.668|
+A<4>           |led<8>         |    8.655|
+A<4>           |led<9>         |    9.354|
+B<0>           |led<0>         |    7.405|
+B<0>           |led<1>         |    6.962|
+B<0>           |led<2>         |    7.090|
+B<0>           |led<3>         |    7.511|
+B<0>           |led<4>         |    7.769|
+B<0>           |led<5>         |    8.402|
+B<0>           |led<6>         |    8.688|
+B<0>           |led<7>         |    9.325|
+B<0>           |led<8>         |    9.312|
+B<0>           |led<9>         |   10.011|
+B<1>           |led<1>         |    8.046|
+B<1>           |led<2>         |    8.546|
+B<1>           |led<3>         |    8.627|
+B<1>           |led<4>         |    8.750|
+B<1>           |led<5>         |    9.336|
+B<1>           |led<6>         |    9.622|
+B<1>           |led<7>         |   10.086|
+B<1>           |led<8>         |   10.073|
+B<1>           |led<9>         |   10.772|
+B<2>           |led<2>         |    7.816|
+B<2>           |led<3>         |    8.169|
+B<2>           |led<4>         |    8.526|
+B<2>           |led<5>         |    9.161|
+B<2>           |led<6>         |    9.447|
+B<2>           |led<7>         |    9.911|
+B<2>           |led<8>         |    9.898|
+B<2>           |led<9>         |   10.597|
+B<3>           |led<3>         |    8.222|
+B<3>           |led<4>         |    8.297|
+B<3>           |led<5>         |    8.624|
+B<3>           |led<6>         |    8.901|
+B<3>           |led<7>         |    9.365|
+B<3>           |led<8>         |    9.352|
+B<3>           |led<9>         |   10.051|
+B<4>           |led<4>         |    8.185|
+B<4>           |led<5>         |    8.104|
+B<4>           |led<6>         |    8.536|
+B<4>           |led<7>         |    9.000|
+B<4>           |led<8>         |    8.987|
+B<4>           |led<9>         |    9.686|
+reset          |led<0>         |    7.888|
+reset          |led<1>         |    7.452|
+reset          |led<2>         |    7.866|
+reset          |led<3>         |    7.179|
+reset          |led<4>         |    7.328|
+reset          |led<5>         |    6.928|
+reset          |led<6>         |    6.911|
+reset          |led<7>         |    6.846|
+reset          |led<8>         |    6.911|
+reset          |led<9>         |    7.492|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Apr 26 20:47:58 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4951 MB
+
+
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\zuchengyuanli\chengfaqi\top.ncd
+OUTFILE=D:\zuchengyuanli\chengfaqi\top.bit
+FAMILY=Artix7
+PART=xc7a100t-2lfgg484
+WORKINGDIR=D:\zuchengyuanli\chengfaqi
+LICENSE=WebPack
+USER_INFO=__0_0_0
